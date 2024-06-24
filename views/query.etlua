@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Query Results</title>
+</head>
+<body>
+  <h1>Query Results</h1>
+  <% if results then %>
+    <table border="1">
+      <tr>
+        <% for key, value in pairs(results[1]) do %>
+          <th><%= key %></th>
+        <% end %>
+      </tr>
+      <% for _, row in ipairs(results) do %>
+        <tr>
+          <% for _, value in pairs(row) do %>
+            <td><%= value %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  <% else %>
+    <p>No results found.</p>
+  <% end %>

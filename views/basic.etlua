@@ -1,0 +1,3 @@
+<div class="my_page">
+  Here is a random number: <%= math.random() %>
+</div>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= page_title or "Default Title" %></title>
+</head>
+<body>
+    <h1><%= page_title or "Default Title" %></h1>
+    <p><%= welcome_message or "Default message here" %></p>
+</body>
+</html>
+
+
+

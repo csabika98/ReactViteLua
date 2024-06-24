@@ -1,0 +1,2 @@
+2024/06/24 23:01:50 [alert] 417#417: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csaba-sallai/Desktop/LapisLua/nginx.conf.compiled:20
+2024/06/24 23:05:32 [alert] 1914#1914: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csaba-sallai/Desktop/LapisLua/nginx.conf.compiled:20

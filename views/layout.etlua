@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= self.page_title or "My Page" %></title>
+</head>
+<body>
+  <h1>Greetings</h1>
+  <% content_for("inner") %>
+</body>
+</html>
