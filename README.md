@@ -1,4 +1,4 @@
-## LAPIS LUA
+## React + Vite + Lua
 
 ## Screenshots
 
