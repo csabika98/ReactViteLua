@@ -2,7 +2,6 @@
 
 ## PRE-installation
 
-Disclamer:
 In order to use this on Windows please install WSL!
 
 
