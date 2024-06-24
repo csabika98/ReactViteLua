@@ -35,3 +35,6 @@
 127.0.0.1 - - [24/Jun/2024:23:42:04 +0200] "GET /query HTTP/1.1" 200 1708 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"
 127.0.0.1 - - [24/Jun/2024:23:42:22 +0200] "GET /baisc HTTP/1.1" 500 1441 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"
 127.0.0.1 - - [24/Jun/2024:23:42:26 +0200] "GET /basic HTTP/1.1" 200 241 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"
+127.0.0.1 - - [25/Jun/2024:00:31:16 +0200] "GET / HTTP/1.1" 200 336 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"
+127.0.0.1 - - [25/Jun/2024:00:31:46 +0200] "GET /query HTTP/1.1" 200 1622 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"
+127.0.0.1 - - [25/Jun/2024:00:31:52 +0200] "GET /mongo_query HTTP/1.1" 200 643 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"

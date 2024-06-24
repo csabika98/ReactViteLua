@@ -1,11 +1,25 @@
-## React + Vite + Lua
+## REACT + VITE + LUA
+
+## PRE-installation
+
+Disclamer:
+In order to use this on Windows please install WSL!
+
+
+
+* Install NodeJS 20 LTS
+```
+1. sudo apt-get update
+2. curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+3. sudo apt-get install -y nodejs
+
+```
 
 ## Screenshots
 
-![](screenshots/1.png)
-![](screenshots/2.png)
-![](screenshots/3.png)
-![](screenshots/4.png)
+![](screenshots/5.png)
+![](screenshots/6.png)
+![](screenshots/7.png)
 
 
 # Install
@@ -34,5 +48,5 @@ https://openresty.org/en/linux-packages.html#ubuntu
 # RUN
 To run the server simply execute the following command:
 ```
-lapis server
+npm run dev
 ```
