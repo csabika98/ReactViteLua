@@ -1,4 +1,4 @@
-## REACT + VITE + LUA
+## REACT + VITE + LUA(LAPIS)
 
 Windows supported (WSL)
 
