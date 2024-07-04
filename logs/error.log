@@ -6,3 +6,7 @@
 2024/06/25 00:28:42 [alert] 24538#24538: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csaba-sallai/Desktop/ReactViteLua/nginx.conf.compiled:20
 2024/06/25 00:29:31 [alert] 24810#24810: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csaba-sallai/Desktop/ReactViteLua/nginx.conf.compiled:20
 2024/06/25 00:30:30 [alert] 25119#25119: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csaba-sallai/Desktop/ReactViteLua/nginx.conf.compiled:20
+2024/07/04 22:13:20 [alert] 402#402: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csabasallai/Desktop/ReactViteLua/nginx.conf.compiled:20
+2024/07/04 22:15:49 [alert] 1025#1025: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csabasallai/Desktop/ReactViteLua/nginx.conf.compiled:20
+2024/07/04 22:18:10 [alert] 1608#1608: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csabasallai/Desktop/ReactViteLua/nginx.conf.compiled:20
+2024/07/04 22:19:09 [alert] 450#450: lua_code_cache is off; this will hurt performance in /mnt/c/Users/csabasallai/Desktop/ReactViteLua/nginx.conf.compiled:20

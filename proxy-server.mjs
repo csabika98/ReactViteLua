@@ -38,20 +38,16 @@ const runLuaApp = () => {
     console.log('Starting Lua application...');
     console.log('Executing command: lapis server');
 
-    LuaProcess = spawn('lapis', ['server'], {
-        stdio: 'inherit',
-        shell: true,
-        cwd: LuaProjectPath // Set the current working directory
-    });
+    // VaporProcess = spawn('wsl', ['./run_vapor.sh'], { cwd: VaporProjectPath });
 
-    LuaProcess.on('error', (err) => {
-        console.error('Failed to start Lua application:', err);
-    });
-
+    LuaProcess = spawn('wsl', ['./run_lua.sh'],{ cwd: LuaProjectPath  });
+    LuaProcess.stdout.on('data', (data) => console.log(`Lua: ${data}`));
+    LuaProcess.stderr.on('data', (data) => console.error(`Lua : ${data}`));
     LuaProcess.on('close', (code) => {
         console.log(`Lua process exited with code ${code}`);
-    });
+    });    
 };
+
 
 runLuaApp();
 
