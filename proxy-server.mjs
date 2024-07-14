@@ -36,11 +36,11 @@ const runLuaApp = () => {
         LuaProcess = null;
     }
     console.log('Starting Lua application...');
-    console.log('Executing command: lapis server');
-
-    const isWSL = process.env.WSL_DISTRO_NAME !== undefined;
-    const command = isWSL ? 'wsl' : './run_lua.sh';
-    const args = isWSL ? ['./run_lua.sh'] : [];
+    const isWindows = process.platform === 'win32';
+    console.log(`Running on ${isWindows ? 'Windows' : 'Unix'}`);
+    
+    const command = isWindows ? 'wsl' : './run_lua.sh';
+    const args = isWindows ? ['./run_lua.sh'] : [];
     const options = { cwd: LuaProjectPath };
 
     LuaProcess = spawn(command, args, options);
@@ -50,9 +50,15 @@ const runLuaApp = () => {
     LuaProcess.on('close', (code) => {
         console.log(`Lua process exited with code ${code}`);
     });
+
+    LuaProcess.on('error', (err) => {
+        console.error('Failed to start subprocess.');
+        console.error(err);
+    });
 };
 
 runLuaApp();
+
 app.use((req, res, next) => {
     console.log(`Request received: ${req.method} ${req.url}`);
     next();
