@@ -32,25 +32,27 @@ let LuaProcess;
 const runLuaApp = () => {
     if (LuaProcess) {
         console.log('Stopping existing Lua application...');
-        LuaProcess.kill(); 
+        LuaProcess.kill();
         LuaProcess = null;
     }
     console.log('Starting Lua application...');
     console.log('Executing command: lapis server');
 
-    // VaporProcess = spawn('wsl', ['./run_vapor.sh'], { cwd: VaporProjectPath });
+    const isWSL = process.env.WSL_DISTRO_NAME !== undefined;
+    const command = isWSL ? 'wsl' : './run_lua.sh';
+    const args = isWSL ? ['./run_lua.sh'] : [];
+    const options = { cwd: LuaProjectPath };
 
-    LuaProcess = spawn('wsl', ['./run_lua.sh'],{ cwd: LuaProjectPath  });
+    LuaProcess = spawn(command, args, options);
+
     LuaProcess.stdout.on('data', (data) => console.log(`Lua: ${data}`));
     LuaProcess.stderr.on('data', (data) => console.error(`Lua : ${data}`));
     LuaProcess.on('close', (code) => {
         console.log(`Lua process exited with code ${code}`);
-    });    
+    });
 };
 
-
 runLuaApp();
-
 app.use((req, res, next) => {
     console.log(`Request received: ${req.method} ${req.url}`);
     next();
